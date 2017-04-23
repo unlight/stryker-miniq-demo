@@ -1,20 +1,27 @@
-export function isTruthy(value) {
+function isTruthy(value) {
     return Boolean(value) === true;
 }
 
-export function sum(...args) {
+function sum(...args) {
     let result = 0;
     let i = args.length;
-    while(i--) {
+    while (i--) {
         result += args[i];
     }
     return result;
 }
 
-export function mul2(a, b) {
+function mul2(a, b) {
     return a * b;
 }
 
-export function inc(a) {
+function inc(a) {
     return a + 1;
-} 
+}
+
+module.exports = {
+    isTruthy,
+    sum,
+    mul2,
+    inc,
+};

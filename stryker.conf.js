@@ -3,8 +3,8 @@ const webpack = require('webpack');
 module.exports = function(config) {
     config.set({
         files: [
-            { pattern: 'build/source/**/stryker.component.js', mutated: true, included: false },
-            'build/source/**/stryker.component.spec.js',
+            { pattern: 'src/**/*.component.js', mutated: true, included: false },
+            'src/**/*.component.spec.js', // { pattern: 'pattern', included: true, mutated: false }
         ],
         testRunner: 'karma',
         testFramework: 'jasmine',
@@ -14,7 +14,7 @@ module.exports = function(config) {
             baseDir: '.testresults/mutation'
         },
         // logLevel: 'debug', // --logLevel
-        maxConcurrentTestRunners: 1,
+        // maxConcurrentTestRunners: 1,
         clearTextReporter: {
             maxTestsToLog: 0
         },
@@ -27,20 +27,6 @@ module.exports = function(config) {
             webpack: {
                 module: {
                     exprContextCritical: false,
-                    rules: [
-                        {
-                            test: /\.component\.html$/,
-                            use: ['raw-loader'],
-                        },
-                        {
-                            test: /\.component\.scss$/,
-                            use: ['raw-loader', 'sass-loader'],
-                        },
-                        {
-                            test: /\.component\.[tj]s$/,
-                            use: ['angular2-template-loader'],
-                        }
-                    ]
                 },
             }
         },
