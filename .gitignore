@@ -1,3 +1,4 @@
 node_modules/
 ~*
 .testresults/
+.stryker-tmp/

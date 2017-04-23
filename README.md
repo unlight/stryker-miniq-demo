@@ -1,7 +1,11 @@
 Stryker Demo
 ---
+
+Quick start
+---
 ```
-npm run stryker:source && npm run stryker:run -- "--logLevel" "info" --timeoutMs 1000
-npm run stryker:run
-npm run stryker:run -- "--logLevel" "debug" --timeoutMs 1000
+git clone https://github.com/unlight/stryker-miniq-demo
+cd stryker-miniq-demo
+npm i
+npm run stryker
 ```
