@@ -21,7 +21,7 @@
     "karma": "1.6.0",
     "karma-coverage": "1.1.1",
     "karma-jasmine": "1.1.0",
-    "karma-nightmare": "0.4.5",
+    "karma-nightmare": "0.4.6",
     "karma-webpack": "2.0.3",
     "lodash": "4.17.4",
     "stryker": "0.6.0",
