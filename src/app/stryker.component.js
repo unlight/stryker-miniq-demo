@@ -15,9 +15,7 @@ function mul2(a, b) {
     return a * b;
 }
 
-function inc(a) {
-    return a + 1;
-}
+const inc = (a) => (a + 1);
 
 module.exports = {
     isTruthy,

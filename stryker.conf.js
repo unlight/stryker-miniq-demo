@@ -1,5 +1,3 @@
-const webpack = require('webpack');
-
 module.exports = function(config) {
     config.set({
         files: [
@@ -30,7 +28,7 @@ module.exports = function(config) {
                 },
             }
         },
-        // karmaConfigFile: 'karma.conf.ts' // <-- add your karma.conf.js file here
+        // karmaConfigFile: 'karma.conf.js' // <-- add your karma.conf.js file here
         // mutate: [
         //     'src/**/*.js' // <-- mark files for mutation here
         // ]

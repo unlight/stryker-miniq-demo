@@ -18,4 +18,4 @@ describe('Stryker demo:', () => {
         // expect(result).toBe(4);
     });
 
-}); 
+});
