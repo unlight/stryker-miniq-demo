@@ -10,8 +10,7 @@
     "t": "npm run karma -- --single-run",
     "karma": "karma start",
     "stryker": "stryker run stryker.conf.js",
-    "killzombieproc": "node killzombieproc",
-    "stryker2": "npm run stryker && npm run killzombieproc"
+    "poststryker": "node killzombieproc"
   },
   "engines": {
     "npm": ">=3"
