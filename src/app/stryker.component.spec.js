@@ -15,7 +15,6 @@ describe('Stryker demo:', () => {
     it('mul2', () => {
         let result = mul2(2, 2);
         expect(result).toBeDefined();
-        // expect(result).toBe(4);
     });
 
 });
