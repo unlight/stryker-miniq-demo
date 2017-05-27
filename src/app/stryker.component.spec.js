@@ -1,9 +1,9 @@
-import { isTruthy, sum, mul2 } from './stryker.component';
+import { isNumber, sum, mul2 } from './stryker.component';
 
 describe('Stryker demo:', () => {
 
-    it('isTruthy ', () => {
-        let result = isTruthy(1);
+    it('isNumber ', () => {
+        let result = isNumber(1);
         expect(result).toBeTruthy();
     });
 

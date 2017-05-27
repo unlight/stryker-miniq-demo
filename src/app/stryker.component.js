@@ -1,5 +1,5 @@
-function isTruthy(value) {
-    return Boolean(value) === true;
+function isNumber(value) {
+    return typeof value === 'number';
 }
 
 function sum(...args) {
@@ -18,7 +18,7 @@ function mul2(a, b) {
 const inc = (a) => (a + 1);
 
 module.exports = {
-    isTruthy,
+    isNumber,
     sum,
     mul2,
     inc,
